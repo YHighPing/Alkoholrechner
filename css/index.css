@@ -1,0 +1,90 @@
+/*Alle normalen texte*/
+p {
+    font-family: "Calibri Light";
+    text-align: center;
+}
+
+
+/*Headline Box Alkoholrechner*/
+p1{
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    background-color: darkred;
+    font-family: "Calibri Light";
+    color: black;
+    text-align: center;
+    padding: 20px 640px;
+    font-size: 100px;
+}
+p2{
+    padding-left: 887px;
+}
+
+/*Buttons Weiblich/Männlich, Reduktionsfaktor style+verschiebung*/
+#buttonWeiblich:hover{
+    background-color: darkred;
+}
+#buttonMaennlich:hover{
+    background-color: darkred;
+}
+
+#buttonWeiblich {
+    margin-left: 887px;
+    padding: 6px 20px;/*größe des buttons*/
+    color: black; /*schriftfarbe*/
+    font-family: "Calibri Light";/*schriftart*/
+    font-size: 15px;/*schriftgröße*/
+    border-style: solid;
+    border-width: 2px;   /*festerRahmen+größe der border*/
+    border-radius: 3px; /*rundet Border ab*/
+    border-color: black;
+    background-color: gray;
+}
+#buttonMaennlich{
+    padding: 6px 20px;/*größe des buttons*/
+    color: black; /*schriftfarbe*/
+    font-family: "Calibri Light";/*schriftart*/
+    font-size: 15px;/*schriftgröße*/
+    border-style: solid;
+    border-width: 2px;  /*festerRahmen+größe der border*/
+    border-radius: 3px; /*rundet Border ab*/
+    border-color: black;
+    background-color: gray;
+}
+
+/*Style textfelder*/
+.textfelderStyle {
+    margin-left: 887px;
+    font-family: "Calibri Light";
+    font-size: 15px;
+    color: black;
+    padding: 6px 32px;
+    background-color: gray;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 3px;
+}
+
+.textfelderStyle:hover {
+    background-color: darkred;
+}
+
+.labeltextfelder{
+    font-size: 15px;
+    font-family: "Calibri Light";
+    color: black;
+}
+
+
+
+/*
+Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
+
+Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.
+
+Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.
+
+The following example shows the different behavior of display: inline, display: inline-block and display: block:*/
