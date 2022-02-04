@@ -84,6 +84,7 @@ function buttonClick() {
                                 i = getraenkminimum+1;
                                 for (i= 0; i<=4;i+){
                                     //dsa ist neu
+                                    //20:01
                                     }
 
                             }
