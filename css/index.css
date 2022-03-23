@@ -1,15 +1,12 @@
 /*Alle normalen texte*/
-p {
-    font-family: "Calibri Light";
+p{
     text-align: center;
+    font-family: "Calibri Light";
 }
-
-
-/*Headline Box Alkoholrechner*/
 p1{
     box-sizing: border-box;
     border-style: solid;
-    border-width: 3px;
+    border-width: 4px;
     border-color: black;
     background-color: darkred;
     font-family: "Calibri Light";
@@ -18,8 +15,14 @@ p1{
     padding: 20px 640px;
     font-size: 100px;
 }
+
 p2{
-    padding-left: 887px;
+    padding-left: 225px;
+}
+
+h1{
+    text-align: center;
+    color: darkred;
 }
 
 /*Buttons Weiblich/Männlich, Reduktionsfaktor style+verschiebung*/
@@ -78,13 +81,14 @@ p2{
     color: black;
 }
 
+#ergebnisAusgabe{
+    font-family: "Calibri Light";
+    font-size: xx-large;
+
+}
 
 
-/*
-Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
 
-Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.
-
-Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.
-
-The following example shows the different behavior of display: inline, display: inline-block and display: block:*/
+p4{
+    color: white;
+}

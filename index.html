@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Alkohol</title>
     <script src="main.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<br><br><br><br>
-&nbsp;&nbsp;&nbsp;<p1>Alkoholrechner</p1> <!-- vllt geht die headline auch mit</inpu title -->
-<br><br><br><br>
 
-<br><br><br><br><br><br>
-<p> Mit diesem Rechner kannst du deinen Alkoholpegel errechnen und somit herausfinden, ob du z.B. nach der Party noch mit dem Auto fahren kannst.
+<br>
+
+<p1>Alkoholrechner</p1>
+
+<div1 style="position: absolute;top: 160px;left: 325px">
+    <p><img src="https://img.freepik.com/vektoren-kostenlos/alkoholgetraenkeflaschen-die-im-vintage-stil-schwarz-weiss-gravieren_261805-94.jpg" height="400px" width="1200px"></p>
+</div1>
+
+<h1 style="position: absolute;top: 550px;left: 225px">Berechnungen des Promillerechners</h1>
+
+<div2 style="position: absolute;width: 1500px;left: 225px;top: 610px;text-align: center;border-color: black;border: 5px;border-style: solid;font-family: 'Arial Black'" >
+    <!-- Einleitungstext -->
+    Mit diesem Rechner kannst du deinen Alkoholpegel errechnen und somit herausfinden, ob du z.B. nach der Party noch mit dem Auto fahren kannst.
     Es ist ganz einfach. Um eine optimale Berechnung zu erzielen, musst du zuerst einige Werte angeben. Dies geht schnell und einfach.
     Vergiss jedoch nicht das dieser Rechner keine 100 prozentige Genauigkeit gewährleistet. Es gibt viele Faktoren die dieser Rechner beachtet
     jedoch gibt es noch einige äußere Einflüsse die diese Berechnungen nicht erfassen können. So ergibt sich folgende Rechnung:
@@ -34,58 +39,60 @@
 
     Damit du diese ganzen Rechnungen nicht noch selber ausrechnen musst, kannst du deine Werte schnell, einfach und unkompliziert eintragen und in
     blitzes schnelle eine Schätzung für deinen Alkoholpegel erhalten.
-</p>
-<br>
+</div2>
 
+<div3 style="position: absolute;top: 870px;left: 800px">
+<h1>Schon kann es losgehen!</h1>
 <p>Gib hier deine Daten an!</p>
 <p>Gib dein Geschlecht an!</p>
-<br>
-<!-- Button Reduktionsfaktor -->
+</div3>
+
+<div4 style="position: absolute;top: 1020px">
+    <!-- PromilleRechner -->
+    <!-- Button Reduktionsfaktor -->
 <button1  id="buttonWeiblich" type="button" onclick="reduktionsfaktorWeiblich()">
     Weiblich
 </button1>
-&nbsp;
+&nbsp
 <button2  id="buttonMaennlich" type="button" onclick="reduktionsfaktorMaennlich()">
     Männlich
 </button2>
 
-<!-- Textfelder -->
+<!-- Eingabefelder -->
 <br><br>
-<button3 type="button" class="textfelderStyle" onclick="getränkhinzufügen()">
-    Getränk hinzufügen
-</button3>
-<br><br>
-    <input type="text" class="textfelderStyle" id="textfeldNameGetränk" required placeholder="Name des Getränks . . . ">
-    <label>(Name)</label>
-<br><br>
-    <input type="text"  class="textfelderStyle" id="textfeld_körpergewicht" pattern="-?[0-9]*(\.[0-9]+)?" required placeholder="Gewicht . . ." >
+<label for="textfeld_körpergewicht"></label><input type="text" class="textfelderStyle" id="textfeld_körpergewicht" pattern="-?[0-9]*(\.[0-9]+)?" required placeholder="Gewicht . . ." >
     <label class="labeltextfelder">(Kilogramm)</label>
 <br><br>
-    <input type="text" class="textfelderStyle" id="textfeld_getraenkMenge" pattern="-?[0-9]*(\.[0-9]+)?" required placeholder="Getränkmenge . . .">
+<label for="textfeld_getraenkMenge"></label><input type="text" class="textfelderStyle" id="textfeld_getraenkMenge" pattern="-?[0-9]*(\.[0-9]+)?" required placeholder="Getränkmenge . . .">
     <label class="labeltextfelder">(Milliliter)</label>
 <br><br>
-    <input type="text" class="textfelderStyle" id="textfeld_alkoholInProzent" pattern="-?[0-9]*(\.[0-9]+)?" reqäuired placeholder="Alkoholgehalt . . .">
+<label for="textfeld_alkoholInProzent"></label><input type="text" class="textfelderStyle" id="textfeld_alkoholInProzent" pattern="-?[0-9]*(\.[0-9]+)?" required placeholder="Alkoholgehalt . . .">
     <label class="labeltextfelder">(Prozent)</label>
 <br><br>
-    <input type="text" class="textfelderStyle" id="textfeld_vergangene Zeit nach konsum des getränks" pattern="-?[0-9]*(\.[0-9]+)?" placeholder="vergangene Zeit">
+<label for="textfeld_vergangene Zeit nach konsum des getränks"></label><input type="text" class="textfelderStyle" id="textfeld_vergangene Zeit nach konsum des getränks" pattern="-?[0-9]*(\.[0-9]+)?" required placeholder="vergangene Zeit">
     <label class="labeltextfelder">(Stunden)</label>
-<!-- Die ganzen textfelder in eine tabelle reinschreiben und mit einem verknüpften button neue spalte hinzufügen maximale spalten reduzieren und pro weiteren klick auf weiteres getränk hinzufügen -->
-
-<!-- Button Berechnung-->
-
-<p>___________________</p>
-    <button4 type="button" class="textfelderStyle" onclick="buttonClick()">
+    <br><br>
+    <!-- Button Berechnung-->
+    <button4 type="button" class="textfelderStyle" onclick="PromilleBerechnung()">
         Berechnen
     </button4>
 
-<br><br>
-<!-- Ausgabe des Ergebnistextes -->
-<p> Dein Promillewert liegt bei:  </p><p id = "ergebnisAusgabe"></p>
-<p id="ergebnisAussage"></p>
-<!--
-<div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate">
-</div>
--->
+</div4>
 
- </body>
+<div5 style="position: absolute;top: 1270px;left: 695px">
+<!-- Ausgabe des Ergebnistextes -->
+<p style="position: absolute;left: 200px">__________________________</p>
+    <br><br>
+<p>Dein Promillewert liegt bei:<p id = "ergebnisAusgabe"></p></p>
+
+<p id="ergebnisAussage"></p>
+<p4 style="position: absolute;left: 35px"><a href="https://www.youtube.com/watch?v=PP9I6WRD4VI"><p4 id="linkFeld"></p4></a></p4>
+</div5>
+
+<p style="position: absolute;top: 885px;left: 225px">
+<img src="https://www.merkur.de/bilder/2020/05/30/13782791/1333580890-ueber-1-1-promille-alkohol-hatte-ein-autofahrer-im-blut-sturzbetrunken-vom-einkaufen-nach-hause-gefahren-war-und-sich-dort-1d7ZVpVrmue9.jpg" height="420" width="520"></p>
+
+<div6 style="position: absolute;top: 1600px">__________________________________________________________________________________________________________________________________________________________________________________________</div6>
+
+</body>
 </html>
